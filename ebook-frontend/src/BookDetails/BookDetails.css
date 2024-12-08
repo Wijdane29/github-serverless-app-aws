@@ -1,0 +1,266 @@
+
+.details-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Arial", sans-serif;
+    /* background-color: #555; */
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* background-color: yellowgreen; */
+}
+
+
+
+.details-image-section {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    /* width: 100%; */
+    /* background-color: red; */
+    /* width: 40%; */
+    margin-left: 50px;
+
+}
+
+
+
+.image-thumbnails {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.thumbnail-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.thumbnail-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.thumbnail-button:hover .thumbnail-image {
+    transform: scale(1.1);
+    border: 2px solid #000;
+}
+
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-image {
+    /* max-width: 100%; */
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 350px;
+}
+
+.details-info {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: yellow; */
+    width: 800px;
+}
+
+.details-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details-author, .details-genre, .details-rating , .details-price{
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.details-pdf {
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000;
+    border: 2px black bold;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.add-to-cart-button:hover {
+    background-color: #555;
+}
+
+.cart-icon {
+    margin-right: 10px;
+}
+
+.product-description{
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-heading {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.similar-products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.page-title {
+    font-size: 0.9rem;
+    color: #444;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+.btns-container{
+    display: flex;
+    column-gap: 30px;
+}
+.inf-container{
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.thumbnail-inf{
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    width: 160px;
+    text-align: center;
+
+}
+.span-description{
+    background-color: #000;
+    width: 7px;
+    height: 50px;
+    color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.para-description{
+    line-height: 1.8;
+    font-weight: 500;
+    margin-top: -20px;
+}
+/* Styles pour la modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 1.2rem;
+
+  }
+  
+  .pdf-viewer {
+    width: 100%;
+    height: 80vh;
+  }
+  .thumbnail-title{
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+
+  
+
+@media (min-width: 768px) {
+    .details-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px) {
+    .image-thumbnails {
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .details-image-section {
+        flex-direction: row;
+        width: 40%;
+    }
+}

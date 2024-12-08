@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.main-about-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  color: #4e342e;
+}
+
+.about-wrapper {
+  max-width: 800px;
+  position: relative; /* Makes the element the reference for pseudo-element */
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden; /* Prevents content from overflowing */
+  background: none; /* No background here since the image is in ::before */
+}
+
+/* Pseudo-element for the background image */
+.about-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/background4.jpeg") center/cover no-repeat;
+  opacity: 0.2; /* Set image opacity to 20% */
+  z-index: -1; /* Send image behind the text */
+  filter: brightness(100%); /* Ensure brightness is unaffected */
+  border-radius: 10px; /* Match the container’s border radius */
+}
+
+/* About Section Text */
+.about-wrapper h1 {
+  font-size: 36px;
+  color: #bb7564;
+  margin-bottom: 20px;
+}
+
+.about-wrapper p {
+  font-size: 16px;
+  color: #6d4c41;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #bb7564;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #6d4c41;
+  line-height: 1.8;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about-section ul li {
+  font-size: 16px;
+  color: #6d4c41;
+  margin-bottom: 10px;
+}
+
+.about-section ul li strong {
+  color: #bb7564;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    padding: 30px 20px;
+  }
+
+  .about-wrapper h1 {
+    font-size: 28px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+}

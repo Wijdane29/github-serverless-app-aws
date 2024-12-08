@@ -1,0 +1,92 @@
+.banner-container {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    font-family: "Arial", sans-serif;
+
+  }
+  
+  .banner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  @media (min-width: 640px) {
+    .banner-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .banner-image {
+    max-width: 400px;
+    height: 350px;
+    width: 100%;
+    margin-left: 8rem;
+    /* margin: 0 auto; */
+    box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.8);
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .banner-description {
+    font-size: 0.875rem;
+    color: #6b7280; /* Tailwind's gray-500 */
+    line-height: 1.5;
+  }
+  
+  .banner-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    height: 48px;
+    width: 48px;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+  
+  .indigo-bg {
+    background-color: #e0e7ff;
+  }
+  
+  .blue-bg {
+    background-color: #bfdbfe;
+  }
+  
+  .green-bg {
+    background-color: #d1fae5;
+  }
+  
+  .yellow-bg {
+    background-color: #fef9c3;
+  }
+  

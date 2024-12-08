@@ -1,0 +1,108 @@
+.main-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #fff;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    width: calc(800px * 7);
+    /* Updated for 7 images */
+    height: 100%;
+    transition: margin-left 2s ease-in-out;
+    margin-left: 0;
+}
+
+.slide {
+    width: 800px;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #697565;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #697565;
+}
+
+.manual-btn.active {
+    background: #697565;
+}
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.slider-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.slider-description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    padding: 12px 30px;
+    font-weight: bold;
+    background-color: #697565;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 250px;
+    height: 60px;
+}
+
+.shop-now-btn:hover {
+    width: 260px;
+    height: 62px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+.NavLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }

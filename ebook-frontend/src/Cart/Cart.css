@@ -1,0 +1,125 @@
+.cart-container {
+    padding: 16px;
+    padding-top: 30px;
+    font-family: "Arial", sans-serif;
+
+  }
+  
+
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ 
+  .cart-table th {
+    padding: 30px 12px 35px 12px;
+    text-align: left;
+    
+  }
+  
+  .cart-table td {
+    padding: 30px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .book-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .book-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 16px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+  
+  .book-info p {
+    margin: 4px 0;
+  }
+  
+
+  .quantity-input {
+    width: 60px; /* Adjust width as needed */
+    height: 12px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 0px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .quantity-input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+  }
+  .delete-button {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .delete-button img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .cart-summary {
+    padding: 16px;
+  }
+  
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 390px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+.summary{
+    font-size: 2.2rem;
+}
+.subtotal{
+    font-size: 1.5rem;  
+}
+.subtotal span{
+    padding-left: 166px;
+    color: #697565;
+    font-weight: 900;
+}
+.container-cards{
+    display: flex;
+    column-gap: 20px;
+}
+.container-cards img{
+    width: 65px;
+}
+  

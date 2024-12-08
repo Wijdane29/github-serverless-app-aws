@@ -1,0 +1,126 @@
+.main-container{
+    display: block;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+    background-color: #fff;
+    /* width: 100%; */
+    font-family: "Arial", sans-serif;
+
+  }
+  
+  /* Logo Section */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Navigation Items */
+  .nav-items-container {
+    display: flex;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-items li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-items li a:hover,
+  .active-link {
+    color: black !important;
+    font-weight: bold;
+  }
+  
+  /* Search Bar */
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 237, 237);
+    border-radius: 5px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(238, 237, 237);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: gray;
+
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+    background-color: rgb(238, 237, 237);
+  }
+  .search-input::placeholder {
+    color: gray;
+   
+  }
+  
+  /* Action Buttons Section */
+  .action-buttons {
+    display: flex;
+  }
+  
+  .action-items {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+} 
+  .cart-link {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px 8px;
+    border: 2px solid white;
+  }
+
+  .separator {
+    /* width: 100%; */
+    height: 1px;
+    background-color: #ccc; /* Light grey color for the separator */
+    margin-top: 10px; 
+  }
+
+  
